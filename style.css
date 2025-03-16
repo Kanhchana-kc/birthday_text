@@ -32,6 +32,19 @@ body{
     display:inline-flex;
     transition: transform 0.3s ease-in-out;
 }
+.card.open {
+    transform: rotate(0deg);
+}
+
+.card.open .outside {
+    transform: rotateY(0deg);
+}
+
+/* Optionally, you can add smooth transition effects */
+.card, .outside {
+    transition: transform 0.5s ease-in-out;
+}
+
 .card:hover{
     transform: rotate(-5deg);
 

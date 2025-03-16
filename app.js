@@ -1,4 +1,7 @@
-
+document.querySelector('.inside').addEventListener('click', function () {
+    const card = document.querySelector('.card');
+    card.classList.toggle('open');
+});
     let scale = 1;
     const card = document.querySelector(".card");
 
